@@ -1,5 +1,6 @@
 // Dashboard.js
 import React from 'react';
+import {useAirstackQueryFollowers} from './airstack_dashboard_queries.js';
 
 function Dashboard() {
   return (
