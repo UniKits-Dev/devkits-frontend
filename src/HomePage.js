@@ -15,13 +15,15 @@ function HomePage() {
   return (
     <div className="login-container">
         <div className="logo">
-            <img src="public/logo192.png" alt="Company Logo" />
+            <img src="devkits.png" alt="Company Logo" />
         </div>
 
         <h1>Welcome to the DevKits Dashboard</h1>
 
-        <h2><MetaMaskLoginButton onConnected={handleConnected} /></h2>
-
+        <div className="button">
+          <img src="MetaMask_Fox.svg.png" alt="Logo" className="button-logo" />
+          <MetaMaskLoginButton onConnected={handleConnected} />
+        </div>
     </div>
 );
 }
