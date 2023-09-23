@@ -2,6 +2,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import MetaMaskLoginButton from './MetaMaskLoginButton';
+import './LoginPage.css'; // Importing the CSS
 
 function HomePage() {
   const navigate = useNavigate();
@@ -12,11 +13,17 @@ function HomePage() {
   };
 
   return (
-    <div>
-      <h1>Welcome</h1>
-      <MetaMaskLoginButton onConnected={handleConnected} />
+    <div className="login-container">
+        <div className="logo">
+            <img src="public/logo192.png" alt="Company Logo" />
+        </div>
+
+        <h1>Welcome to the DevKits Dashboard</h1>
+
+        <h2><MetaMaskLoginButton onConnected={handleConnected} /></h2>
+
     </div>
-  );
+);
 }
 
 export default HomePage;
