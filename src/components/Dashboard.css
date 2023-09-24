@@ -12,12 +12,44 @@ body {
 }
 
 .login-container {
-    max-width: 80vw;
+    max-width: 240vw;
     padding: 30px;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 8px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;  /* For horizontal scrolling if table overflows */
 }
+
+/* Additional styles for the table to make it look better */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;  /* Space between tables if you have multiple */
+}
+
+th, td {
+    border: 1px solid #e0e0e0;
+    padding: 8px 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f7f7f7;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Styling for the important message */
+.important {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    margin-bottom: 20px;  /* Adds space between the message and the table */
+}
+
 
 /* Table Styling */
 table {
