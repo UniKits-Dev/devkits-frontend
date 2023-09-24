@@ -25,7 +25,7 @@ function Navigation() {
       <div className="container">
         <Link className="navbar-brand" to="/">
           <img
-            src="devkits.png" // Replace with the actual image path
+            src="UniKits_Logo.png" // Replace with the actual image path
             alt="Your Logo"
             height="50px"
             width="auto"
