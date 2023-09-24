@@ -1,2 +1,2 @@
 # devkits-frontend
-Website for the Devkits project and Associated Integrations
+Website for the Unikits project and Associated Integrations
