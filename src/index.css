@@ -11,3 +11,37 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+* Add this CSS to your global styles (e.g., src/index.css) */
+
+/* Style for the entire navigation bar */
+.navbar {
+  background-color: black; /* Change the background color as needed */
+}
+
+.navbar-nav {
+  width: auto;
+  margin-left: 110px;
+}
+
+/* Your CSS file (e.g., styles.css) */
+.float-left-div {
+  position: fixed;
+  float: left;
+}
+
+/* Style for the navigation links */
+.nav-link {
+  color: #a75a5a !important; /* Change the link text color as needed */
+}
+
+/* Style for the WalletConnect button container */
+.navbar-text {
+  margin-left: 10px; /* Add some spacing between items */
+}
+
+.buttons-nav {
+   margin: 10px; /* Add some spacing between items */
+   position: static;
+   float: left;
+}

@@ -7,8 +7,11 @@ import './LoginPage.css'; // Importing the CSS
 import { Web3Button } from '@web3modal/react'
 
 function HomePage() {
-  return <Web3Button />
+  // return <Web3Button />
 }
+
+export default HomePage;
+
 // function HomePage() {
 //   const navigate = useNavigate();
 
@@ -30,5 +33,3 @@ function HomePage() {
 //     </div>
 // );
 // }
-
-export default HomePage;

@@ -44,6 +44,8 @@
   "devDependencies": {
     "@web3modal/ethereum": "^2.7.1",
     "@web3modal/react": "^2.7.1",
+    "bootstrap": "^5.3.2",
+    "react-bootstrap": "^2.8.0",
     "viem": "^1.12.1",
     "wagmi": "^1.4.2"
   }
