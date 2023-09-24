@@ -6,6 +6,7 @@ import { configureChains, createConfig, WagmiConfig } from 'wagmi';
 import { arbitrum, mainnet, polygon } from 'wagmi/chains';
 import { Button } from 'react-bootstrap';
 import { Web3Button } from '@web3modal/react';
+import { Web3NetworkSwitch } from '@web3modal/react'
 
 const projectId = process.env.REACT_APP_WC_API_KEY;
 const chains = [arbitrum, mainnet, polygon];
@@ -40,10 +41,15 @@ function Navigation() {
           </Button>
         </div>
 
-        <div className="ml-auto">
-          <Web3Button />
-          <WagmiConfig config={wagmiConfig}></WagmiConfig>
-          <Web3Modal projectId={projectId} ethereumClient={ethereumClient} />
+        <div className="wc-buttons">
+            <div className="wc-btn float-right-div flex-row flex-md-row flex-lg-row">
+            <Web3Button />
+            <WagmiConfig config={wagmiConfig}></WagmiConfig>
+            <Web3Modal projectId={projectId} ethereumClient={ethereumClient} />
+            </div>
+            <div className="network-btn float-right-div flex-row flex-md-row flex-lg-row" > 
+            <Web3NetworkSwitch />
+            </div>
         </div>
       </div>
     </nav>

@@ -12,11 +12,13 @@ code {
     monospace;
 }
 
-* Add this CSS to your global styles (e.g., src/index.css) */
-
 /* Style for the entire navigation bar */
 .navbar {
-  background-color: black; /* Change the background color as needed */
+  background-color: #f9f9f9; /* Change the background color of the navbar */
+  padding: 10px; /* Add some padding around the navbar */
+  position: fixed; /* Make the navbar fixed at the top of the screen */
+  width: 100%; /* Full-width */
+  z-index: 1; /* Stay on top */
 }
 
 .navbar-nav {
@@ -41,7 +43,107 @@ code {
 }
 
 .buttons-nav {
-   margin: 10px; /* Add some spacing between items */
+   margin: 5px; /* Add some spacing between items */
    position: static;
    float: left;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: rgb(34,193,195);
+  background: -moz-linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(112,29,194,1) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(112,29,194,1) 100%);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(112,29,194,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#22c1c3",endColorstr="#701dc2",GradientType=1);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container {
+  width: 300px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.logo img {
+  width: 50%; /* Adjust based on your logo's dimensions */
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+display: inline-flex;     /* Makes the button's content layout in a row */
+align-items: center;     /* Aligns the items vertically to the center */
+background-color: blue;  /* The background color of the button */
+border: none;            /* Remove any default border */
+border-radius: 50px;     /* Makes the button edges circular */
+color: white;            /* Text color */
+padding: 10px 20px;      /* Adjust padding as needed */
+}
+
+.button-logo {
+width: 20px;             /* Set your desired logo width */
+height: 20px;            /* Set your desired logo height */
+margin-right: 10px;      /* Adds some space between the logo and text */
+border: none;            /* Remove any default border */
+}
+
+.header-style {
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.paragraph-style {
+  font-size: 20px;
+}
+
+.wc-buttons {
+  width: 75px;
+  margin-right: 10px;
+}
+
+.wc-btn {
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  margin-right: 50px;
+}
+
+.network-btn {
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  margin-right: 50px;
+  margin-top: 5px;
+}
+
+.important {
+  color: rgb(66, 13, 13);
+  font-weight: bold;
+  font-size: 25px;
 }

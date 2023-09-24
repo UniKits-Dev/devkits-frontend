@@ -1,35 +1,13 @@
-// HomePage.js
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import MetaMaskLoginButton from './MetaMaskLoginButton';
-import './LoginPage.css'; // Importing the CSS
-
-import { Web3Button } from '@web3modal/react'
 
 function HomePage() {
-  // return <Web3Button />
+  return (
+    <div className="container mt-5 text-center">
+      <h1 className="header-style">Welcome to DevKits</h1>
+      <p className="paragraph-style important">Only authenticated users with Lens or ENS profiles may use this dapp</p>
+      <p className="paragraph-style">Please authenticate and sign in with WalletConnect to start querying the blockchain and taking advantage of Uniswap V4.</p>
+    </div>
+  );
 }
 
 export default HomePage;
-
-// function HomePage() {
-//   const navigate = useNavigate();
-
-//   const handleConnected = () => {
-//     // Navigate to dashboard after successful connection
-//     navigate("/dashboard");
-//   };
-
-//   return (
-//     <div className="login-container">
-//         <div className="logo">
-//             <img src="public/logo192.png" alt="Company Logo" />
-//         </div>
-
-//         <h1>Welcome to the DevKits Dashboard</h1>
-
-//         <h2><MetaMaskLoginButton onConnected={handleConnected} /></h2>
-
-//     </div>
-// );
-// }
