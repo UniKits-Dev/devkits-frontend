@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { init, useQuery } from "@airstack/airstack-react";
 import { useAccount } from 'wagmi';
+import { SwapWidget } from '@uniswap/widgets'
+import '@uniswap/widgets/fonts.css'
 import './Dashboard.css';
 
 const apiKey = process.env.REACT_APP_AIRSTACK_API_KEY;
@@ -175,6 +177,12 @@ return (
           </div>
       ) : null}
 
+    <div className="Uniswap">
+      <SwapWidget
+      width={560}
+      />
+    </div>
+      <h1>_____________________________</h1>
       <h1>Your Most Recent Follower</h1>
       <table>
           <thead>
@@ -227,6 +235,7 @@ return (
           </tbody>
       </table>
   </div>
+
 );
 }
 

@@ -133,3 +133,46 @@ tr:hover {
     height: 500px;  /* Adjust as needed */
     border: 1px solid #ccc;
 }
+
+.Uniswap {
+    /* Positioning and dimension */
+    width: 100%;
+    max-width: 600px; /* or whatever max-width you want */
+    margin: 0 auto;   /* center the widget if its width is less than its container */
+
+    /* Spacing */
+    padding: 20px;
+
+    /* Styles */
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* You can specify the theme for the SwapWidget inside the Uniswap container using descendant selectors */
+.Uniswap .SwapWidget {
+    /* Background, Text, Button Colors, etc. */
+    background-color: #282c34;  /* Example background color */
+    color: #ffffff;  /* Example text color */
+
+    /* If the widget has specific elements like buttons, you can style them with more specific selectors */
+    /* For example: */
+    border-radius: 8px;
+    overflow: hidden; /* In case there are elements that might overflow the rounded corners */
+}
+
+.Uniswap .SwapWidget button {
+    background-color: #007BFF; /* Example button color */
+    color: #ffffff; /* Button text color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.Uniswap .SwapWidget button:hover {
+    background-color: #0056b3; /* Darken button color on hover */
+}
+
+/* If there are other specific elements inside the SwapWidget that need styling based on the theme, you can add more selectors and rules as necessary */
